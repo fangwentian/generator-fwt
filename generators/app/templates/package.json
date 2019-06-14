@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "kill": "k 3000 && k 5001",
+    "build": "cd ./client && npm run dev",
+    "server": "cd ./server && npm run dev",
+    "dev": "npm run build & npm run server"
+  },
+  "author": "",
+  "license": "ISC"
+}
