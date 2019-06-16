@@ -20,9 +20,13 @@ module.exports = class extends Generator {
     }
 
     writing() {
-        this.fs.copy(
+        this.log('Start writing...')
+        this.fs.copyTpl(
             this.sourceRoot(),
-            this.destinationPath(`${this.answers.name}`)
+            this.destinationPath(`${this.answers.name}`),
+            {
+                ...this.answers
+            }
         )
     }
 
