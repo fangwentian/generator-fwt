@@ -13,6 +13,6 @@
     "installs": "cd ./server && npm i",
     "install": "npm run installc & npm run installs"
   },
-  "author": "",
+  "author": "fangwentian",
   "license": "ISC"
 }
